@@ -27,11 +27,11 @@ p_tx = friis(d, (f/100) * 1e6, gt, gr)
 st.write("Moc nadajnika potrzebna do nadania sygnału na odległość", d, "metrów na częstotliwości", f, "MHz wynosi", round(p_tx, 3), "W.")
 
 # Wykres zależności mocy od odległości
-distances = range(10, 1000, 10)
-powers = [friis(d, (f/100) * 1e6, gt, gr) for d in distances]
-fig, ax = plt.subplots()
-ax.plot(distances, powers)
-ax.set(xlabel='Odległość (m)', ylabel='Moc nadajnika (W)',
-       title='Zależność mocy nadajnika od odległości')
-ax.grid()
-st.pyplot(fig)
+#distances = range(10, 1000, 10)
+#powers = [friis(d, (f/100) * 1e6, gt, gr) for d in distances]
+#fig, ax = plt.subplots()
+#ax.plot(distances, powers)
+#ax.set(xlabel='Odległość (m)', ylabel='Moc nadajnika (W)',
+#       title='Zależność mocy nadajnika od odległości')
+#ax.grid()
+#st.pyplot(fig)
