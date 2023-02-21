@@ -38,6 +38,6 @@ st.write("Moc nadajnika potrzebna do nadania sygnału na odległość", d, "metr
 
 # Wykres zależności mocy od odległości
 distances = range(10, 1000, 10)
-powers = [friis(d, f * 1e6, gt, gr) for d in distances]
+powers = [friis(d, (f/100) * 1e6, gt, gr) for d in distances]
 chart_data = {'Odległość (m)': distances, 'Moc nadajnika (W)': powers}
 st.line_chart(chart_data)
